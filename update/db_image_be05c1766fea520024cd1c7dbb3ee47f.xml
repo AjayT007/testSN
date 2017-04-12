@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category/>
+        <format>gif</format>
+        <height>1</height>
+        <image/>
+        <name>dual-color-bg.gif</name>
+        <size_bytes>1178</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>patrick.bishop</sys_created_by>
+        <sys_created_on>2016-04-06 14:22:28</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>be05c1766fea520024cd1c7dbb3ee47f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>dual-color-bg.gif</sys_name>
+        <sys_package display_value="Ginnie Mae Compliance Review" source="x_12281_ginnie_mae">564fe9850f970200bc5a3a7ce1050eb6</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ginnie Mae Compliance Review">564fe9850f970200bc5a3a7ce1050eb6</sys_scope>
+        <sys_update_name>db_image_be05c1766fea520024cd1c7dbb3ee47f</sys_update_name>
+        <sys_updated_by>patrick.bishop</sys_updated_by>
+        <sys_updated_on>2016-04-06 14:22:46</sys_updated_on>
+        <thumbnail/>
+        <width>3000</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color/>
+        <compressed>true</compressed>
+        <content_type>image/gif</content_type>
+        <file_name>image</file_name>
+        <image_height/>
+        <image_width/>
+        <size_bytes>1178</size_bytes>
+        <size_compressed>891</size_compressed>
+        <sys_created_by>patrick.bishop</sys_created_by>
+        <sys_created_on>2016-04-06 14:22:46</sys_created_on>
+        <sys_id>2d254d366fea520024cd1c7dbb3ee479</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>patrick.bishop</sys_updated_by>
+        <sys_updated_on>2016-04-06 14:22:46</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>be05c1766fea520024cd1c7dbb3ee47f</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="2d254d366fea520024cd1c7dbb3ee479">2d254d366fea520024cd1c7dbb3ee479</sys_attachment>
+        <sys_created_by>patrick.bishop</sys_created_by>
+        <sys_created_on>2016-04-06 14:22:46</sys_created_on>
+        <sys_id>7d254d366fea520024cd1c7dbb3ee479</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>c/d0s7BM3MHNyNDAwFDPm8+om6P4nzvCN0DBJbEkEUjb2FcUJCZnp5YoJKWmZ+bZKr3fvV9JITPFVinc1NfAt8A5NSPTo6ooNbjKLyS5KjvZMkXJ3k7BpsKqIrcgN7UkUaEiNyev2KrCVikxJT8p1QrIBgnrKymAlZRk2yo5giQUQHY65xelKpjqGesmGxgaKpiZ6RmamJqZGeooGBkYGukbAJGZrqGJlamZlZG5AhQoAW0rSkmzCnJxg9oF5NkqZZSUFFjp65eXl+uVG+vlF6XrG1paWoLMMDLSBarQLa7MK0ms0M0rVoaZ4JJanFyUWVCSmZ+nAOInJuWXltgqKcG8kFsANzavWA/sHb3k/Fz9isQCfUM9A30khb6++JXm5sJVF5cEpabhV10cUlmQqh+UWpxfWpScClSuDNJcYOVclJpYkl8Ukp+fAwvFgIz8kvzijPwCBedgMwWN8My8lPzyYk2wel9fK8+84pLEvORUTxdbJaCIXmZmipWLo7OjiZOFuZuzgZGhoauphZmBobOliYmzkbmzq7OBIUyvS35yaW5qXglMbwpCrwVOvaCkANGdWpRZlpriVpSfqwD2slUmbreY4nYLRG8KbreY4dSrD3SMPlpEw4SAqQfEhCdbIAee8FPzgKm9CJisGf//+/vn96+fP75/+/rl86ePH96/e/vm9auXL54/e/rk8aOHD+7fu3vn9q2bN65fu3rl8qWLF86fO3vm9KmTJ44fO3rk8KGDB/bv27tn966dO7Zv27pl86aNG9avW7tm9aqVK5YvW7pk8aKFC+bPmztn9qyZM6ZPmzpl8qSJE/r7enu6uzo72ttaW5qbGhvq62prqqsqK8rLSkuKiwoL8vNyc7KzMjPS01JTkpMSE+LjYmOioyIjwsNCQ4KDAgP8/Xx9vL08PdzdXF2cnRwd7O1sbaytLC3MzUxNjI0MDfT1dHW0tTQ11NVUVZSVFBXk5WRlpKUkJcTFREWEhQQF+Pl4ebi5ODnY2VhZmJkYGRgUf7IwgIAOiACVGgxMoS39K0+/5V88Z8ut7s339vzmb3vkMe1Z57JXp7a94z7+yef6t97nv0S+/OPn4Wo/suhjh4/W9DPLPnP2ei2/supr19ms7XfWfefm6z7+ZNPPHr/V199s+83br83NYA0AffskrJoEAAA=</data>
+        <length>1176</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="2d254d366fea520024cd1c7dbb3ee479">2d254d366fea520024cd1c7dbb3ee479</sys_attachment>
+        <sys_created_by>patrick.bishop</sys_created_by>
+        <sys_created_on>2016-04-06 14:22:46</sys_created_on>
+        <sys_id>bd254d366fea520024cd1c7dbb3ee479</sys_id>
+    </sys_attachment_doc>
+</record_update>

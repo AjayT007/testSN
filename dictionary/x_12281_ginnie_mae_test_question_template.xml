@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Test Question Template" max_length="40" name="x_12281_ginnie_mae_test_question_template" type="collection">
+        <element label="Calculated" max_length="40" name="calculated" type="boolean"/>
+        <element label="Level II Question Number" max_length="32" name="parent_question_number" reference="x_12281_ginnie_mae_test_question_group_template" type="reference"/>
+        <element attributes="no_truncate" label="Question" max_length="250" name="question" type="string"/>
+        <element label="Level III Question Number" max_length="40" name="question_number" type="string"/>
+        <index name="index">
+            <element name="parent_question_number"/>
+        </index>
+    </element>
+</database>

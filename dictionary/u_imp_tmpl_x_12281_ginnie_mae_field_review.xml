@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 12281 Ginnie Mae Field Review" max_length="40" name="u_imp_tmpl_x_12281_ginnie_mae_field_review" type="collection">
+        <element attributes="import_attribute_name=Draft Report Delivered,edge_encryption_enabled=true" label="Draft Report Delivered" max_length="40" name="u_draft_report_delivered" type="string"/>
+        <element attributes="import_attribute_name=Field Reviewer,edge_encryption_enabled=true" label="Field Reviewer" max_length="40" name="u_field_reviewer" type="string"/>
+        <element attributes="import_attribute_name=Field Review Completion Date,edge_encryption_enabled=true" label="Field Review Completion Date" max_length="40" name="u_field_review_completion_date" type="string"/>
+        <element attributes="import_attribute_name=Final Report Delivered,edge_encryption_enabled=true" label="Final Report Delivered" max_length="40" name="u_final_report_delivered" type="string"/>
+        <element attributes="import_attribute_name=Level of Review,edge_encryption_enabled=true" label="Level of Review" max_length="40" name="u_level_of_review" type="string"/>
+        <element attributes="import_attribute_name=Notes,edge_encryption_enabled=true" label="Notes" max_length="40" name="u_notes" type="string"/>
+        <element attributes="import_attribute_name=Party Name,edge_encryption_enabled=true" label="Party Name" max_length="32" name="u_party_name" type="string"/>
+        <element attributes="import_attribute_name=Record ID,edge_encryption_enabled=true" label="Record ID" max_length="40" name="u_record_id" type="string"/>
+        <element attributes="import_attribute_name=Review Status,edge_encryption_enabled=true" label="Review Status" max_length="40" name="u_review_status" type="string"/>
+        <element attributes="import_attribute_name=Review Type,edge_encryption_enabled=true" label="Review Type" max_length="40" name="u_review_type" type="string"/>
+        <element attributes="import_attribute_name=Scheduled Start Date,edge_encryption_enabled=true" label="Scheduled Start Date" max_length="40" name="u_scheduled_start_date" type="string"/>
+    </element>
+</database>

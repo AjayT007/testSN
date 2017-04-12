@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_12281_ginnie_mae_field_review_test</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Status and Percent Complete</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	//gs.addInfoMessage('Update Status and Pecent Complete ' );
+	var fieldReviewNo = current.field_review;
+	
+/*	var testNumber = current.test_number;
+
+	//Get status counts
+	grFieldReviewTest = new GlideRecord('x_12281_ginnie_mae_field_review_test');//sample
+	grFieldReviewTest.addQuery('test_number', testNumber);
+	grFieldReviewTest.query();	
+	var countAll = grFieldReviewTest.getRowCount();
+	//gs.addInfoMessage('countAll = ' +countAll);
+	
+	grFieldReviewTest = new GlideRecord('x_12281_ginnie_mae_field_review_test');//sample
+	grFieldReviewTest.addQuery('test_number', testNumber);
+	grFieldReviewTest.addQuery('status', '=', 'Not Started');
+	grFieldReviewTest.query();	
+	var countNotStarted = grFieldReviewTest.getRowCount();
+	//gs.addInfoMessage('countNotStarted = ' +countNotStarted);
+	
+	grFieldReviewTest = new GlideRecord('x_12281_ginnie_mae_field_review_test');//sample
+	grFieldReviewTest.addQuery('test_number', testNumber);
+	grFieldReviewTest.addQuery('status', '=', 'In Progress');
+	grFieldReviewTest.query();	
+	var countInProgress = grFieldReviewTest.getRowCount();
+	//gs.addInfoMessage('countInProgress = ' +countInProgress);
+	
+	grFieldReviewTest = new GlideRecord('x_12281_ginnie_mae_field_review_test');//sample
+	grFieldReviewTest.addQuery('test_number', testNumber);
+	grFieldReviewTest.addQuery('status', '=', 'Complete');
+	grFieldReviewTest.query();	
+	var countComplete = grFieldReviewTest.getRowCount();
+	//gs.addInfoMessage('countComplete = ' +countComplete);
+	
+	var testStatus;
+	if(countComplete == countAll)testStatus = 'Complete';
+	else if (countNotStarted == countAll)testStatus = 'Not Started';
+	else testStatus = 'In Progress';
+	
+	//gs.addInfoMessage('testStatus = ' +testStatus);
+	*/
+	//Get Percent Complete at Sample level
+	grFieldReviewTest = new GlideAggregate('x_12281_ginnie_mae_field_review_test');
+	grFieldReviewTest.addQuery('field_review', fieldReviewNo);	
+	grFieldReviewTest.query();
+	var countAll = grFieldReviewTest.getRowCount();
+	//gs.addInfoMessage('countAll = ' +countAll);
+	
+	var totalComplete = 0;
+	while(grFieldReviewTest.next()){
+		totalComplete = totalComplete + grFieldReviewTest.percent_complete;
+		//gs.addInfoMessage('totalComplete = ' +totalComplete);
+	}
+	
+	var percentCompleteOverall = 	totalComplete/countAll;
+	//Round to two decimal places
+	percentCompleteOverall = percentCompleteOverall.toFixed(2); 
+	//gs.addInfoMessage('percentCompleteOverall = ' +percentCompleteOverall);
+/*	
+	//Set status and percent on great grand parent i.e. Test level
+	var grFieldReviewTestNumber = new GlideRecord('x_12281_ginnie_mae_field_review_test_number');
+	//gs.addInfoMessage('Hello great grand parent testNumber'+ testNumber);
+	grFieldReviewTestNumber.addQuery('sys_id', testNumber);
+	grFieldReviewTestNumber.query();
+	//gs.addInfoMessage('row count = ' +grFieldReviewTestNumber.getRowCount());
+
+	if(grFieldReviewTestNumber.next()) {		
+		//Update status
+		grFieldReviewTestNumber.status = testStatus;
+		
+		//Update Percent Complete
+		grFieldReviewTestNumber.percent_complete = percentCompleteOverall;
+	}		
+	grFieldReviewTestNumber.update();
+	
+	//Get percent complete for all great grand parents i.e. Test levels
+	grFieldReviewTestNumber = new GlideRecord('x_12281_ginnie_mae_field_review_test_number');
+	grFieldReviewTestNumber.addQuery('field_review', fieldReviewNo);
+	grFieldReviewTestNumber.query();
+	var countAllTests = grFieldReviewTestNumber.getRowCount();
+	//gs.addInfoMessage('countAllTests = ' +countAllTests);
+	
+	var totalTestComplete = 0;
+	var percentCompleteFieldReview = 0;
+	while(grFieldReviewTestNumber.next()){
+		totalTestComplete = totalTestComplete + grFieldReviewTestNumber.percent_complete;
+		//gs.addInfoMessage('totalTestComplete = ' +totalTestComplete);
+	}
+	percentCompleteFieldReview = totalTestComplete/countAllTests;
+	//gs.addInfoMessage('percentCompleteFieldReview = ' +percentCompleteFieldReview);
+*/	
+	// Now, get a reference to field review and update the percentage	
+	var grFldRev = new GlideRecord('x_12281_ginnie_mae_field_review');
+	grFldRev.addQuery('sys_id', fieldReviewNo);
+	grFldRev.query();
+	if(grFldRev.next()) {
+		grFldRev.percent_complete = percentCompleteOverall+'%';
+	}
+	grFldRev.update();
+
+})(current, previous);
+
+
+
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-03-22 15:59:29</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2f1b800e6f12d60024cd1c7dbb3ee439</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>Update Status and Percent Complete</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Ginnie Mae Compliance Review" source="x_12281_ginnie_mae">564fe9850f970200bc5a3a7ce1050eb6</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ginnie Mae Compliance Review">564fe9850f970200bc5a3a7ce1050eb6</sys_scope>
+        <sys_update_name>sys_script_2f1b800e6f12d60024cd1c7dbb3ee439</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-04-07 21:46:08</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=2f1b800e6f12d60024cd1c7dbb3ee439"/>
+</record_update>

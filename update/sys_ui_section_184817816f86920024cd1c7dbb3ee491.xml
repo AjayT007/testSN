@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="184817816f86920024cd1c7dbb3ee491" sys_domain="global" table="x_12281_ginnie_mae_field_review_test" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>field_review</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-07 17:20:04</sys_created_on>
+            <sys_id>ec57becf6f22920024cd1c7dbb3ee4aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12281_ginnie_mae_field_review_test" sys_domain="global" view="Default view">184817816f86920024cd1c7dbb3ee491</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-07 17:20:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>question_number</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-07 17:20:04</sys_created_on>
+            <sys_id>2057becf6f22920024cd1c7dbb3ee4ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12281_ginnie_mae_field_review_test" sys_domain="global" view="Default view">184817816f86920024cd1c7dbb3ee491</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-07 17:20:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-07 17:20:04</sys_created_on>
+            <sys_id>6057becf6f22920024cd1c7dbb3ee4ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12281_ginnie_mae_field_review_test" sys_domain="global" view="Default view">184817816f86920024cd1c7dbb3ee491</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-07 17:20:04</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>findings</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-07 17:20:04</sys_created_on>
+            <sys_id>a057becf6f22920024cd1c7dbb3ee4ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12281_ginnie_mae_field_review_test" sys_domain="global" view="Default view">184817816f86920024cd1c7dbb3ee491</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-07 17:20:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>field_reviewer</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-07 17:20:04</sys_created_on>
+            <sys_id>e057becf6f22920024cd1c7dbb3ee4ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12281_ginnie_mae_field_review_test" sys_domain="global" view="Default view">184817816f86920024cd1c7dbb3ee491</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-07 17:20:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-07 17:20:04</sys_created_on>
+            <sys_id>2457becf6f22920024cd1c7dbb3ee4ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12281_ginnie_mae_field_review_test" sys_domain="global" view="Default view">184817816f86920024cd1c7dbb3ee491</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-07 17:20:04</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>question</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-07 17:20:04</sys_created_on>
+            <sys_id>6457becf6f22920024cd1c7dbb3ee4ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12281_ginnie_mae_field_review_test" sys_domain="global" view="Default view">184817816f86920024cd1c7dbb3ee491</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-07 17:20:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-07 17:20:04</sys_created_on>
+            <sys_id>b457becf6f22920024cd1c7dbb3ee4ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12281_ginnie_mae_field_review_test" sys_domain="global" view="Default view">184817816f86920024cd1c7dbb3ee491</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-07 17:20:04</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>percent_complete</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-07 17:20:04</sys_created_on>
+            <sys_id>f457becf6f22920024cd1c7dbb3ee4ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12281_ginnie_mae_field_review_test" sys_domain="global" view="Default view">184817816f86920024cd1c7dbb3ee491</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-07 17:20:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-07 17:20:04</sys_created_on>
+            <sys_id>3857becf6f22920024cd1c7dbb3ee4ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12281_ginnie_mae_field_review_test" sys_domain="global" view="Default view">184817816f86920024cd1c7dbb3ee491</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-07 17:20:04</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-04-07 17:20:04</sys_created_on>
+            <sys_id>7857becf6f22920024cd1c7dbb3ee4ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_12281_ginnie_mae_field_review_test" sys_domain="global" view="Default view">184817816f86920024cd1c7dbb3ee491</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-04-07 17:20:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_12281_ginnie_mae_field_review_test</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-03-07 18:04:42</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>184817816f86920024cd1c7dbb3ee491</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_12281_ginnie_mae_field_review_test</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Ginnie Mae Compliance Review" source="x_12281_ginnie_mae">564fe9850f970200bc5a3a7ce1050eb6</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Ginnie Mae Compliance Review">564fe9850f970200bc5a3a7ce1050eb6</sys_scope>
+            <sys_update_name>sys_ui_section_184817816f86920024cd1c7dbb3ee491</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-03-07 18:04:42</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

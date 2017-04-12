@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 12281 Ginnie Mae Test Template" max_length="40" name="u_imp_tmpl_x_12281_ginnie_mae_test_template" type="collection">
+        <element attributes="import_attribute_name=Expanded Sample Size" label="Expanded Sample Size" max_length="40" name="u_expanded_sample_size" type="integer"/>
+        <element label="Level I Question Number" max_length="15" name="u_level_i_question_number" type="decimal"/>
+        <element attributes="import_attribute_name=Party Type,edge_encryption_enabled=true" label="Party Type" max_length="40" name="u_party_type" type="string"/>
+        <element attributes="import_attribute_name=Question,edge_encryption_enabled=true" label="Question" max_length="250" name="u_question" type="string"/>
+        <element attributes="import_attribute_name=Question Number" label="Question Number" max_length="15" name="u_question_number" type="string"/>
+        <element attributes="import_attribute_name=Standard Sample Size" label="Standard Sample Size" max_length="40" name="u_standard_sample_size" type="integer"/>
+    </element>
+</database>

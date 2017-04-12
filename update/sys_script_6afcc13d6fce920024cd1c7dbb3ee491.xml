@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_12281_ginnie_mae_field_review</collection>
+        <condition/>
+        <description/>
+        <execute_function>true</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Generate Field Review Tests</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[function onAfter(current, previous) {
+	// Get Level of Review value
+	var levelOfReview = current.level_of_review;
+	var partyType = current.party_type;
+	
+	var grTestTemplate = new GlideRecord('x_12281_ginnie_mae_test_template');
+	grTestTemplate.addQuery('party_type', partyType);
+	grTestTemplate.query();
+	//gs.addInfoMessage('Hello Grandparent !!!  '+grTestTemplate.getRowCount());	
+	while(grTestTemplate.next()){
+		var GrandParentQuestion = grTestTemplate.question;
+		
+		var grFieldReviewTest = new GlideRecord('x_12281_ginnie_mae_field_review_test');//Test
+		grFieldReviewTest.initialize();	
+		//gs.addInfoMessage('Hello current.sys_id !!!  '+current.sys_id);
+		grFieldReviewTest.field_review = current.sys_id;
+		grFieldReviewTest.test_number = grTestTemplate.question_number;
+		grFieldReviewTest.question = grTestTemplate.question;
+		grFieldReviewTest.insert();		
+		//gs.addInfoMessage('Hello Test added !!!' + grFieldReviewTest.test_number);
+		
+		//For the grand parent template Loop through Parent template questions
+		var grTestQuestionGroupTemplate = new GlideRecord('x_12281_ginnie_mae_test_question_group_template');
+		grTestQuestionGroupTemplate.addQuery('parent_question_number', grTestTemplate.sys_id);// add grand parent to query
+		
+		grTestQuestionGroupTemplate.query();
+		//gs.addInfoMessage('Hello Parent !!!  '+grTestQuestionGroupTemplate.getRowCount());	
+		while(grTestQuestionGroupTemplate.next()){		
+			//Sample size
+			var sampleSize;
+			if(levelOfReview == 'Standard') {
+				sampleSize = grTestQuestionGroupTemplate.standard_sample_size;
+			}
+			else if(levelOfReview == 'Expanded') {
+				sampleSize = grTestQuestionGroupTemplate.expanded_sample_size;
+			}	
+			
+			//Loop for the number of samples
+			for (i = 0; i < sampleSize; i++) {
+		
+				var groupQuestionNumber = grTestQuestionGroupTemplate.question_number;
+				//Create level II parents for each parent template
+				var grFieldReviewTestQuestionGroup = new GlideRecord('x_12281_ginnie_mae_field_review_test_question_group');
+				grFieldReviewTestQuestionGroup.initialize();	
+				grFieldReviewTestQuestionGroup.parent_question = grFieldReviewTest.sys_id;
+				grFieldReviewTestQuestionGroup.sample_id = ' Sample ' + (i+1) + ' : ' + groupQuestionNumber ;
+				grFieldReviewTestQuestionGroup.question = grTestQuestionGroupTemplate.question;
+				grFieldReviewTestQuestionGroup.question_number = groupQuestionNumber;			
+				grFieldReviewTestQuestionGroup.insert();
+							
+				//For each Parent template, Loop through child template Questions
+				var grTestQuestionTemplate = new GlideRecord('x_12281_ginnie_mae_test_question_template');
+				grTestQuestionTemplate.addQuery('parent_question_number.parent_question_number', grTestTemplate.sys_id);// add grand parent to query
+				grTestQuestionTemplate.addQuery('parent_question_number', grTestQuestionGroupTemplate.sys_id);// add parent to query			
+				grTestQuestionTemplate.query();
+				//gs.addInfoMessage('Hello Children !!!  '+grTestQuestionTemplate.getRowCount());
+				while(grTestQuestionTemplate.next()){	
+					//Create level III children 
+					var grFieldReviewTestQuestion = new GlideRecord('x_12281_ginnie_mae_field_review_test_question');
+					grFieldReviewTestQuestion.initialize();	
+					grFieldReviewTestQuestion.parent_question = grFieldReviewTestQuestionGroup.sys_id;
+					grFieldReviewTestQuestion.question = grTestQuestionTemplate.question;
+					grFieldReviewTestQuestion.question_number = grTestQuestionTemplate.question_number;			
+					grFieldReviewTestQuestion.calculate = grTestQuestionTemplate.calculated;
+					grFieldReviewTestQuestion.insert();
+				}//grTestQuestionTemplate loop end.		
+			}//For Sample Size
+		}//grTestQuestionGroupTemplate loop end.
+		
+	}
+}]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-03-09 15:51:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6afcc13d6fce920024cd1c7dbb3ee491</sys_id>
+        <sys_mod_count>51</sys_mod_count>
+        <sys_name>Generate Field Review Tests</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Ginnie Mae Compliance Review" source="x_12281_ginnie_mae">564fe9850f970200bc5a3a7ce1050eb6</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ginnie Mae Compliance Review">564fe9850f970200bc5a3a7ce1050eb6</sys_scope>
+        <sys_update_name>sys_script_6afcc13d6fce920024cd1c7dbb3ee491</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-04-07 21:45:11</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=6afcc13d6fce920024cd1c7dbb3ee491"/>
+</record_update>

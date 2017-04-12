@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Party" max_length="40" name="x_12281_ginnie_mae_party" type="collection">
+        <element label="Document Custodian" max_length="40" name="document_custodian" type="boolean"/>
+        <element label="Document Custodian Number" max_length="40" name="document_custodian_number" type="string"/>
+        <element label="HMBS Document Custodian" max_length="40" name="hmbs_document_custodian" type="boolean"/>
+        <element label="HMBS Document Custodian Number" max_length="40" name="hmbs_document_custodian_number" type="string"/>
+        <element label="HMBS Issuer" max_length="40" name="hmbs_issuer" type="boolean"/>
+        <element label="HMBS Issuer Number" max_length="40" name="hmbs_issuer_number" type="string"/>
+        <element label="Issuer" max_length="40" name="issuer" type="boolean"/>
+        <element label="Issuer Number" max_length="40" name="issuer_number" type="string"/>
+        <element label="Party Name" max_length="40" name="name" type="string"/>
+        <element label="R&amp;W Issuer" max_length="40" name="r_w_issuer" type="boolean"/>
+        <element label="R&amp;W Issuer Number" max_length="40" name="r_w_issuer_number" type="string"/>
+    </element>
+</database>

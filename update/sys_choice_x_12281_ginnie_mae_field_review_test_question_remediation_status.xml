@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="remediation_status" table="x_12281_ginnie_mae_field_review_test_question" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>remediation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Not Started</label>
+            <language>en</language>
+            <name>x_12281_ginnie_mae_field_review_test_question</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-03-21 17:18:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a90493616f1e960024cd1c7dbb3ee479</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-03-21 17:18:53</sys_updated_on>
+            <value>Not Started</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>remediation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In Progress</label>
+            <language>en</language>
+            <name>x_12281_ginnie_mae_field_review_test_question</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-03-21 17:18:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ed0493616f1e960024cd1c7dbb3ee479</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-03-21 17:18:53</sys_updated_on>
+            <value>In Progress</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>remediation_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complete</label>
+            <language>en</language>
+            <name>x_12281_ginnie_mae_field_review_test_question</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-03-21 17:18:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a10493616f1e960024cd1c7dbb3ee47a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-03-21 17:18:53</sys_updated_on>
+            <value>Complete</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>remediation_status</element>
+            <name>x_12281_ginnie_mae_field_review_test_question</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-03-21 17:18:53</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>7e9c881a4f463200b58c3b718110c75c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>remediation_status</sys_name>
+            <sys_package display_value="Ginnie Mae Compliance Review" source="x_12281_ginnie_mae">564fe9850f970200bc5a3a7ce1050eb6</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Ginnie Mae Compliance Review">564fe9850f970200bc5a3a7ce1050eb6</sys_scope>
+            <sys_update_name>sys_choice_x_12281_ginnie_mae_field_review_test_question_remediation_status</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-03-21 17:18:53</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

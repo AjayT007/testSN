@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="review_type" table="x_12281_ginnie_mae_field_review" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>review_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Probationary Review</label>
+            <language>en</language>
+            <name>x_12281_ginnie_mae_field_review</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-10-22 18:51:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e6310e890f970200bc5a3a7ce1050ea7</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-10-22 19:06:21</sys_updated_on>
+            <value>Probationary Review</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>review_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Selected due to size</label>
+            <language>en</language>
+            <name>x_12281_ginnie_mae_field_review</name>
+            <sequence>0</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-10-22 18:51:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ee310e890f970200bc5a3a7ce1050ea6</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-10-22 19:06:21</sys_updated_on>
+            <value>Selected due to size</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>review_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3-year Review Deadline</label>
+            <language>en</language>
+            <name>x_12281_ginnie_mae_field_review</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-10-22 18:51:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6a310e890f970200bc5a3a7ce1050ea7</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-10-22 19:06:21</sys_updated_on>
+            <value>3-year Review Deadline</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>review_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>previous review results</label>
+            <language>en</language>
+            <name>x_12281_ginnie_mae_field_review</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-10-22 18:51:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e2310e890f970200bc5a3a7ce1050ea7</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-10-22 19:06:21</sys_updated_on>
+            <value>previous review results</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>review_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Selected due to size, previous review results, or watchlist presence</label>
+            <language>en</language>
+            <name>x_12281_ginnie_mae_field_review</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-10-22 19:06:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a7840ec90f970200bc5a3a7ce1050e3f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-10-22 19:06:21</sys_updated_on>
+            <value>Selected due to size, previous review results, or watchlist presence</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>review_type</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>watchlist presence</label>
+            <language>en</language>
+            <name>x_12281_ginnie_mae_field_review</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-10-22 18:51:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>66310e890f970200bc5a3a7ce1050ea7</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-10-22 19:06:21</sys_updated_on>
+            <value>watchlist presence</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>review_type</element>
+            <name>x_12281_ginnie_mae_field_review</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2015-10-22 18:51:48</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>f81af74e4f063200b58c3b718110c70f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>review_type</sys_name>
+            <sys_package display_value="Ginnie Mae Compliance Review" source="x_12281_ginnie_mae">564fe9850f970200bc5a3a7ce1050eb6</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Ginnie Mae Compliance Review">564fe9850f970200bc5a3a7ce1050eb6</sys_scope>
+            <sys_update_name>sys_choice_x_12281_ginnie_mae_field_review_review_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2015-10-22 19:06:21</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

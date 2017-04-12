@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Field Review Test Question" max_length="40" name="x_12281_ginnie_mae_field_review_test_question" type="collection">
+        <element label="Calculate" max_length="40" name="calculate" type="boolean"/>
+        <element label="Comment" max_length="40" name="comment" type="string"/>
+        <element label="Code" max_length="32" name="finding_code" reference="x_12281_ginnie_mae_finding_code" type="reference"/>
+        <element label="Parent Question" max_length="32" name="parent_question" reference="x_12281_ginnie_mae_field_review_test_question_group" reference_cascade_rule="delete" type="reference"/>
+        <element attributes="no_truncate=true" label="Question" max_length="250" name="question" read_only="true" type="string"/>
+        <element label="#" max_length="10" name="question_number" read_only="true" type="integer"/>
+        <element label="Remed Date" max_length="40" name="remediation_date" type="glide_date"/>
+        <element choice="3" default="Not Started" label="Remed Status" max_length="40" name="remediation_status" type="choice">
+            <choice>
+                <element label="Not Started" sequence="0" value="Not Started"/>
+                <element label="In Progress" sequence="1" value="In Progress"/>
+                <element label="Complete" sequence="2" value="Complete"/>
+            </choice>
+        </element>
+        <element label="Resp Acct" max_length="40" name="response_account" type="string"/>
+        <index name="index">
+            <element name="parent_question"/>
+        </index>
+        <index name="index2">
+            <element name="finding_code"/>
+        </index>
+    </element>
+</database>

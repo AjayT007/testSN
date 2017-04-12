@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Test Template" max_length="40" name="x_12281_ginnie_mae_test_template" type="collection">
+        <element choice="1" label="Party Type" max_length="40" name="party_type" type="choice">
+            <choice>
+                <element label="Issuer" sequence="0" value="Issuer"/>
+                <element label="HMBS Issuer" sequence="1" value="HMBS Issuer"/>
+                <element label="R&amp;W Issuer" sequence="2" value="R&amp;W Issuer"/>
+                <element label="Document Custodian" sequence="3" value="Document Custodian"/>
+                <element label="HMBS Document Custodian" sequence="4" value="HMBS Document Custodian"/>
+            </choice>
+        </element>
+        <element attributes="no_truncate" label="Question" max_length="250" name="question" type="string"/>
+        <element display="true" label="Level I Question Number" max_length="40" name="question_number" type="string"/>
+    </element>
+</database>

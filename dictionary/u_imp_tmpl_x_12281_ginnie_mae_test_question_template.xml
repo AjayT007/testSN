@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 12281 Ginnie Mae Test Question Template" max_length="40" name="u_imp_tmpl_x_12281_ginnie_mae_test_question_template" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Level III Question Number" max_length="40" name="u_level_iii_question_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Level II Question Number" max_length="40" name="u_level_ii_question_number" type="string"/>
+        <element attributes="import_attribute_name=Parent Question Number,edge_encryption_enabled=true" label="Parent Question Number" max_length="32" name="u_parent_question_number" type="string"/>
+        <element attributes="import_attribute_name=Question,edge_encryption_enabled=true" label="Question" max_length="250" name="u_question" type="string"/>
+        <element attributes="import_attribute_name=Question Number,edge_encryption_enabled=true" label="Question Number" max_length="40" name="u_question_number" type="string"/>
+    </element>
+</database>

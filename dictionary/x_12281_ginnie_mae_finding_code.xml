@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Finding Code" max_length="40" name="x_12281_ginnie_mae_finding_code" type="collection">
+        <element display="true" label="Code" max_length="40" name="code" type="string"/>
+        <element attributes="no_truncate" label="Description" max_length="200" name="description" type="string"/>
+        <element label="Remediation Days" max_length="10" name="remediation_days" type="integer"/>
+        <element choice="1" label="Risk Level" mandatory="true" max_length="10" name="risk_level" type="choice">
+            <choice>
+                <element label="Low" sequence="0" value="Low"/>
+                <element label="Medium" sequence="1" value="Medium"/>
+                <element label="High" sequence="2" value="High"/>
+                <element label="High Cash" sequence="3" value="High Cash"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="hasLabels=true" label="Field Review" max_length="40" name="x_12281_ginnie_mae_field_review" type="collection">
+        <element label="Draft Report Delivered" max_length="40" name="draft_report_delivered" type="glide_date"/>
+        <element label="Field Review Completion Date" max_length="40" name="field_review_completion_date" type="glide_date"/>
+        <element label="Final Report Delivered" max_length="40" name="final_report_delivered" type="glide_date"/>
+        <element label="Findings" max_length="40" name="findings" read_only="true" type="boolean"/>
+        <element choice="1" label="Level of Review" max_length="40" name="level_of_review" type="choice">
+            <choice>
+                <element label="Standard" sequence="0" value="Standard"/>
+                <element label="Expanded" sequence="1" value="Expanded"/>
+            </choice>
+        </element>
+        <element label="Notes" max_length="40" name="notes" type="string"/>
+        <element default="0" label="Number of High Cash Risk Findings" max_length="40" name="number_of_high_cash_risk_findings" read_only="true" type="integer"/>
+        <element label="Number of High Risk Findings" max_length="40" name="number_of_high_risk_findings" read_only="true" type="integer"/>
+        <element label="Number of Low Risk Findings" max_length="40" name="number_of_low_risk_findings" read_only="true" type="integer"/>
+        <element label="Number of Medium Risk Findings" max_length="40" name="number_of_medium_risk_findings" read_only="true" type="integer"/>
+        <element label="Number of Open Findings" max_length="40" name="number_of_open_findings" read_only="true" type="integer"/>
+        <element label="Participant Name" mandatory="true" max_length="32" name="party" reference="x_12281_ginnie_mae_party" type="reference"/>
+        <element choice="1" label="Participant Type" max_length="40" name="party_type" type="choice">
+            <choice>
+                <element label="Issuer" sequence="0" value="Issuer"/>
+                <element label="HMBS Issuer" sequence="1" value="HMBS Issuer"/>
+                <element label="R&amp;W Issuer" sequence="2" value="R&amp;W Issuer"/>
+                <element label="Document Custodian" sequence="3" value="Document Custodian"/>
+                <element label="HMBS Document Custodian" sequence="4" value="HMBS Document Custodian"/>
+            </choice>
+        </element>
+        <element label="Percent Complete" max_length="40" name="percent_complete" read_only="true" type="string"/>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Participant ID" max_length="40" name="record_id" type="string"/>
+        <element choice="1" label="Review Status" max_length="40" name="review_status" type="choice">
+            <choice>
+                <element label="Pre-Review" sequence="0" value="Pre-Review"/>
+                <element label="Ongoing" sequence="1" value="Ongoing"/>
+                <element label="Completed" sequence="2" value="Completed"/>
+            </choice>
+        </element>
+        <element choice="1" label="Review Type" max_length="40" name="review_type" type="choice">
+            <choice>
+                <element label="Probationary Review" sequence="0" value="Probationary Review"/>
+                <element label="3-year Review Deadline" sequence="1" value="3-year Review Deadline"/>
+                <element label="Selected due to size, previous review results, or watchlist presence" sequence="2" value="Selected due to size, previous review results, or watchlist presence"/>
+            </choice>
+        </element>
+        <element label="Scheduled Start Date" max_length="40" name="scheduled_start_date" type="glide_date"/>
+        <element label="Test Number" max_length="40" name="test_number" reference="x_12281_ginnie_mae_test_template" type="reference"/>
+        <element default="0" label="Total Findings" max_length="40" name="total_findings" read_only="true" type="integer"/>
+        <index name="index">
+            <element name="party"/>
+        </index>
+        <index name="index2">
+            <element name="test_number"/>
+        </index>
+    </element>
+</database>

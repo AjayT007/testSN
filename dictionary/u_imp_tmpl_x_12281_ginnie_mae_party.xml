@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 12281 Ginnie Mae Party" max_length="40" name="u_imp_tmpl_x_12281_ginnie_mae_party" type="collection">
+        <element attributes="import_attribute_name=Issuer/DC#" label="Issuer/DC#" max_length="40" name="u_issuer_dc_" type="integer"/>
+        <element attributes="import_attribute_name=Party Name,edge_encryption_enabled=true" label="Party Name" max_length="40" name="u_party_name" type="string"/>
+        <element attributes="import_attribute_name=Subservicer,edge_encryption_enabled=true" label="Subservicer" max_length="40" name="u_subservicer" type="string"/>
+        <element attributes="import_attribute_name=Type,edge_encryption_enabled=true" label="Type" max_length="40" name="u_type" type="string"/>
+    </element>
+</database>

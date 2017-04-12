@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Field Review Test" max_length="40" name="x_12281_ginnie_mae_field_review_test" type="collection">
+        <element label="Field Review" max_length="32" name="field_review" read_only="true" reference="x_12281_ginnie_mae_field_review" reference_cascade_rule="delete" type="reference"/>
+        <element label="Field Reviewer" max_length="32" name="field_reviewer" reference="sys_user" type="reference"/>
+        <element label="Findings" max_length="40" name="findings" read_only="true" type="boolean"/>
+        <element label="Percent Complete" max_length="20" name="percent_complete" type="decimal"/>
+        <element attributes="no_truncate" label="Test Description" max_length="250" name="question" read_only="true" type="string"/>
+        <element display="true" label="Test #" max_length="40" name="question_number" read_only="true" type="string"/>
+        <element choice="3" default="Not Started" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element label="Not Started" sequence="0" value="Not Started"/>
+                <element label="In Progress" sequence="1" value="In Progress"/>
+                <element label="Complete" sequence="2" value="Complete"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="field_reviewer"/>
+        </index>
+        <index name="index2">
+            <element name="field_review"/>
+        </index>
+    </element>
+</database>

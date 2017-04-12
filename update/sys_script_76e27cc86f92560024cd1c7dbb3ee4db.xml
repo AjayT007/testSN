@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_12281_ginnie_mae_field_review</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Update Remediation Date</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[((function executeRule(current, previous /*null when async*/) {
+	//gs.addInfoMessage('Hello  Remediation Date !!!  ');
+	var completionDate = current.field_review_completion_date;
+	var oldCompletionDate = previous.field_review_completion_date;
+		
+	if(completionDate != '' && oldCompletionDate != completionDate){
+		var fieldReviewSysID = current.sys_id;
+		//gs.addInfoMessage('fieldReviewSysID  ' + fieldReviewSysID);
+		//gs.addInfoMessage('fieldReviewSysID  ' + fieldReviewSysID.getDisplayValue());
+		
+		
+		//Loop through related test questions directly
+		var grFieldReviewTestQuestion = new GlideRecord('x_12281_ginnie_mae_field_review_test_question');
+		grFieldReviewTestQuestion.addQuery('parent_question.parent_question.field_review', fieldReviewSysID);
+		grFieldReviewTestQuestion.addQuery('finding_code', '!=', null);
+		grFieldReviewTestQuestion.query();
+		//gs.addInfoMessage('grFieldReviewTestQuestion count  ' + grFieldReviewTestQuestion.getRowCount());	
+		
+		while(grFieldReviewTestQuestion.next()){
+			var daysToadd = grFieldReviewTestQuestion.finding_code.remediation_days;
+			//gs.addInfoMessage('daysToadd  ' + daysToadd);
+			
+			//gs.addInfoMessage('completionDate  ' + completionDate);
+			var glDate = new GlideDateTime(completionDate);
+			//gs.addInfoMessage('glDate  ' + glDate);
+			glDate.addDaysLocalTime(parseInt(daysToadd));
+			//gs.addInfoMessage('newDate  ' + glDate);
+			
+			grFieldReviewTestQuestion.remediation_date = glDate;
+			//gs.addInfoMessage('NEW remediation_date  ' + grFieldReviewTestQuestion.remediation_date);
+			grFieldReviewTestQuestion.update();
+		}	
+		
+	}
+})(current, previous));
+
+
+
+
+
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-03-16 13:46:48</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>76e27cc86f92560024cd1c7dbb3ee4db</sys_id>
+        <sys_mod_count>44</sys_mod_count>
+        <sys_name>Update Remediation Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Ginnie Mae Compliance Review" source="x_12281_ginnie_mae">564fe9850f970200bc5a3a7ce1050eb6</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ginnie Mae Compliance Review">564fe9850f970200bc5a3a7ce1050eb6</sys_scope>
+        <sys_update_name>sys_script_76e27cc86f92560024cd1c7dbb3ee4db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-04-07 21:45:40</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=76e27cc86f92560024cd1c7dbb3ee4db"/>
+</record_update>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 12281 Ginnie Mae Finding Code" max_length="40" name="u_imp_tmpl_x_12281_ginnie_mae_finding_code" type="collection">
+        <element attributes="import_attribute_name=Code" label="Code" max_length="40" name="u_code" type="string"/>
+        <element attributes="import_attribute_name=Description,edge_encryption_enabled=true" label="Description" max_length="200" name="u_description" type="string"/>
+        <element label="Remediation Days" max_length="40" name="u_remediation_days" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Risk Level" max_length="40" name="u_risk_level" type="string"/>
+    </element>
+</database>

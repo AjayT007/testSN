@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Test Question Group Template" max_length="40" name="x_12281_ginnie_mae_test_question_group_template" type="collection">
+        <element label="Expanded Sample Size" max_length="40" name="expanded_sample_size" type="integer"/>
+        <element label="Level I Question Number" max_length="32" name="parent_question_number" reference="x_12281_ginnie_mae_test_template" type="reference"/>
+        <element attributes="no_truncate" label="Question" max_length="250" name="question" type="string"/>
+        <element display="true" label="Level II Question Number" max_length="40" name="question_number" type="string"/>
+        <element label="Standard Sample Size" max_length="40" name="standard_sample_size" type="integer"/>
+        <index name="index">
+            <element name="parent_question_number"/>
+        </index>
+    </element>
+</database>

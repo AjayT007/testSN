@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 12281 Ginnie Mae Finding" max_length="40" name="u_imp_tmpl_x_12281_ginnie_mae_finding" type="collection">
+        <element attributes="import_attribute_name=Close Date,edge_encryption_enabled=true" label="Close Date" max_length="40" name="u_close_date" type="string"/>
+        <element attributes="import_attribute_name=Creation Date,edge_encryption_enabled=true" label="Creation Date" max_length="40" name="u_creation_date" type="string"/>
+        <element attributes="import_attribute_name=Description,edge_encryption_enabled=true" label="Description" max_length="40" name="u_description" type="string"/>
+        <element attributes="import_attribute_name=Field Review,edge_encryption_enabled=true" label="Field Review" max_length="32" name="u_field_review" type="string"/>
+        <element attributes="import_attribute_name=Finding Code" label="Finding Code" max_length="40" name="u_finding_code" type="integer"/>
+        <element attributes="import_attribute_name=Identifying User,edge_encryption_enabled=true" label="Identifying User" max_length="40" name="u_identifying_user" type="string"/>
+        <element attributes="import_attribute_name=Issuer/DC#,edge_encryption_enabled=true" label="Issuer/DC#" max_length="40" name="u_issuer_dc_" type="string"/>
+        <element attributes="import_attribute_name=Notes,edge_encryption_enabled=true" label="Notes" max_length="40" name="u_notes" type="string"/>
+        <element attributes="import_attribute_name=Referred Date,edge_encryption_enabled=true" label="Referred Date" max_length="40" name="u_referred_date" type="string"/>
+        <element attributes="import_attribute_name=Risk Level,edge_encryption_enabled=true" label="Risk Level" max_length="40" name="u_risk_level" type="string"/>
+        <element attributes="import_attribute_name=Status,edge_encryption_enabled=true" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="import_attribute_name=Type,edge_encryption_enabled=true" label="Type" max_length="40" name="u_type" type="string"/>
+    </element>
+</database>

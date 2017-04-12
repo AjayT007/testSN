@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_12281_ginnie_mae_test_question_template</description>
+        <name>x_12281_ginnie_mae_test_question_template</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-03-07 16:49:07</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>f4f6874d6f46920024cd1c7dbb3ee418</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_12281_ginnie_mae_test_question_template</sys_name>
+        <sys_package display_value="Ginnie Mae Compliance Review" source="x_12281_ginnie_mae">564fe9850f970200bc5a3a7ce1050eb6</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ginnie Mae Compliance Review">564fe9850f970200bc5a3a7ce1050eb6</sys_scope>
+        <sys_update_name>sys_security_acl_f4f6874d6f46920024cd1c7dbb3ee418</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-03-07 16:49:07</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>
